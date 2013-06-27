@@ -61,14 +61,14 @@ float calculate_result(int white_balls[5], int power_ball, int lott[6])
 	return -1;
       }
   }
-
+  //Percent white balls
   for (int i = 0; i < 5; i++){
     for (int j = 0; j < 5; j++){
       if (white_balls[i] == lott[j])
 	result += 0.2;
     }
   }
-
+  // Percent power ball
   if (power_ball == lott[5])
     result += 0.1;
 
