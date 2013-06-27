@@ -28,12 +28,12 @@ static int my_sort_func(const void* p1, const void* p2)
 
 int whiteballs_computer_generated()
 {
-  return rand()%59+1;
+  return rand()%MAX_WHITE_BALL+1;
 }
 
 int powerball_computer_generated()
 {
-  return rand()%39+1;
+  return rand()%MAX_POWER_BALL+1;
 }
 
 void showing_results(int white_balls[5], int power_ball)
