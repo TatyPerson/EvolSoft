@@ -90,22 +90,6 @@ void checkwhiteballs(int balls[5], int control)
   }
 }
 
-void lottery_numbers_simulation(int lott[6])
-{
-  //  int lott[6];
-  
-  for (int i = 0; i < 5; i++){
-    lott[i] = whiteballs_computer_generated();
-    checkwhiteballs(lott, i);
-  }
-  
-  lott[5] = powerball_computer_generated(); // Power ball
-  // Sort the lottery numbers
-
-  showing_results(lott, lott[5]);
-
-}
-
 int main(int argc, char** argv)
 {
     int balls[6];
