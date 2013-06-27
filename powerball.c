@@ -161,9 +161,11 @@ int main(int argc, char** argv)
     
     // the power ball is always the last one given
     int power_ball = balls[5];
-    
+    //Head for the lottery numbers
+    printf("\n--- The lottery numbers ---\n");
     lottery_numbers_simulation(lott);
-
+    //Head for my numbers
+    printf("\n--- Your lottery numbers ---\n");
     float result = calculate_result(balls, power_ball, lott);
     showing_results(balls, power_ball);
 
