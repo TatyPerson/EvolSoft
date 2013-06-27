@@ -101,7 +101,7 @@ void lottery_numbers_simulation(int lott[6])
   
   lott[5] = powerball_computer_generated(); // Power ball
   // Sort the lottery numbers
-  
+  qsort(lott, 5, sizeof(int), my_sort_func);
   showing_results(lott, lott[5]);
 
 }
